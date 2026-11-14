@@ -40,7 +40,7 @@ var STAFF = [
     desc: "",
     positions: [
       { role: "Marshal", tag: "Great General",
-        desc: "Pemimpin tertinggi sekaligus pelopor dari Valthera Legion. Marshal memiliki kendali penuh atas operasi regiment.",
+        desc: "Pemimpin tertinggi sekaligus pelopor dari Valthera Legion. Marshal memiliki kendali penuh atas operasi Legion.",
         members: [
           { name: "Zero",   id: "1126000", status: "Active", wa: "", dc: "" },
           { name: "One", id: "1126001", status: "Active", sub: "Organizer", wa: "", dc: "" }
