@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Valthera Legion of Aldervane</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===== DEFAULT LAMBANG & BANNER (dipakai kalau ASSETS di script masih kosong) ===== -->
+<template id="tpl-crest">
+  <svg viewBox="0 0 100 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Lambang Valthera Legion">
+    <defs>
+      <linearGradient id="cg" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#f0d77a"/><stop offset="1" stop-color="#9c7c1d"/>
+      </linearGradient>
+    </defs>
+    <path d="M50 4 L92 18 V58 C92 88 74 106 50 116 C26 106 8 88 8 58 V18 Z" fill="#0b1530" stroke="url(#cg)" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M50 12 L84 24 V57 C84 82 69 97 50 106 C31 97 16 82 16 57 V24 Z" fill="none" stroke="#d4af37" stroke-width="1" opacity=".6"/>
+    <g stroke="url(#cg)" stroke-width="3" stroke-linecap="round">
+      <path d="M50 24 V30"/><path d="M33 31 L37 36"/><path d="M67 31 L63 36"/><path d="M26 46 H32"/><path d="M68 46 H74"/>
+    </g>
+    <circle cx="50" cy="48" r="9" fill="url(#cg)"/>
+    <path d="M30 62 L50 98 L70 62 H60 L50 82 L40 62 Z" fill="url(#cg)"/>
+  </svg>
+</template>
+
+<template id="tpl-banner">
+  <svg viewBox="0 0 120 330" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Banner imperial">
+    <defs>
+      <linearGradient id="bg1" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#1a2a58"/><stop offset="1" stop-color="#0b1530"/>
+      </linearGradient>
+      <linearGradient id="bg2" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#f0d77a"/><stop offset="1" stop-color="#9c7c1d"/>
+      </linearGradient>
+    </defs>
+    <rect x="0" y="0" width="120" height="10" rx="5" fill="url(#bg2)"/>
+    <circle cx="4" cy="5" r="5" fill="url(#bg2)"/><circle cx="116" cy="5" r="5" fill="url(#bg2)"/>
+    <path d="M10 10 H110 V270 L60 318 L10 270 Z" fill="url(#bg1)" stroke="url(#bg2)" stroke-width="3" stroke-linejoin="round"/>
+    <path d="M20 20 H100 V262 L60 300 L20 262 Z" fill="none" stroke="#d4af37" stroke-width="1" opacity=".55"/>
+    <g stroke="url(#bg2)" stroke-width="3" stroke-linecap="round" fill="none">
+      <path d="M60 44 V54"/><path d="M42 52 L48 59"/><path d="M78 52 L72 59"/><path d="M34 74 H44"/><path d="M76 74 H86"/>
+    </g>
+    <circle cx="60" cy="76" r="13" fill="url(#bg2)"/>
+    <path d="M36 112 L60 160 L84 112 H72 L60 138 L48 112 Z" fill="url(#bg2)"/>
+    <path d="M60 182 L68 194 L60 206 L52 194 Z" fill="url(#bg2)"/>
+    <path d="M60 220 L66 230 L60 240 L54 230 Z" fill="none" stroke="url(#bg2)" stroke-width="2"/>
+    <path d="M28 20 V250 M92 20 V250" stroke="#d4af37" stroke-width=".8" opacity=".25"/>
+  </svg>
+</template>
+
+<header class="site-head">
+  <div class="wrap head-row">
+    <a class="brand" href="#beranda"><span class="logo" data-slot="crest"></span><b>Valthera</b></a>
+    <nav class="menu" aria-label="Menu utama">
+      <a href="#beranda" data-nav="beranda">Beranda</a>
+      <a href="#lore" data-nav="lore">Lore</a>
+      <a href="#castellan" data-nav="castellan">Castellan</a>
+      <a href="#system" data-nav="system">System</a>
+      <a href="#uniform" data-nav="uniform">Uniform</a>
+      <a href="#chronicles" data-nav="chronicles">Chronicles</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- ===== BERANDA ===== -->
+  <section class="page stack" id="p-beranda">
+    <div class="hero">
+      <div class="hero-row">
+        <div class="banner" data-slot="bannerLeft"></div>
+        <div class="hero-center">
+          <span class="logo" data-slot="crest"></span>
+          <span class="sub">Imperium of Aldervane</span>
+          <h1>Valthera Legion of Aldervane</h1>
+          <div class="motto">“Ad Gloria, Ad Aeterna”</div>
+          <p class="ph">Selamat datang di Arx Divina, markas para Valtherian.</p>
+          <div class="cta-row">
+            <a class="cta solid" data-link="wa" href="#">Gabung WhatsApp</a>
+            <a class="cta ghost" data-link="dc" href="#">Gabung Discord</a>
+          </div>
+        </div>
+        <div class="banner" data-slot="bannerRight"></div>
+      </div>
+    </div>
+    <div>
+      <div class="eyebrow">Chronicles I: First Light</div>
+      <h2 class="page-title">Season pertama sedang berjalan</h2>
+      <p class="lead">Kumpulkan poin dari aktivitas, naikkan rank, dan jadilah bagian dari sejarah Legiun.</p>
+    </div>
+    <div class="grid tiles">
+      <a href="#lore"><div class="panel"><h3>Lore</h3><p>Sejarah Imperium of Aldervane dan asal mula Legiun.</p></div></a>
+      <a href="#castellan"><div class="panel"><h3>Castellan</h3><p>Marshal, Legate, Segate, dan jajaran Legiun.</p></div></a>
+      <a href="#system"><div class="panel"><h3>System</h3><p>Aktivitas, poin, badge, dan rank.</p></div></a>
+      <a href="#uniform"><div class="panel"><h3>Uniform</h3><p>Galeri seragam tiap rank.</p></div></a>
+      <a href="#chronicles"><div class="panel"><h3>Chronicles</h3><p>Sistem season dan tema tiap bab.</p></div></a>
+    </div>
+  </section>
+
+  <!-- ===== LORE ===== -->
+  <section class="page stack" id="p-lore" hidden>
+    <div>
+      <div class="eyebrow">Lore</div>
+      <h2 class="page-title">Imperium of Aldervane</h2>
+      <h3 class="page-subtitle">Arx Divina: Valtherian's Base</h3>
+      <p class="ph">(Deskripsi belum diisi.)</p>
+    </div>
+    <div class="grid">
+      <div class="panel"><h3>Sejarah Singkat</h3><p class="ph">(Alur cerita belum diisi.)</p></div>
+      <div class="panel"><h3>“Ad Gloria, Ad Aeterna”</h3><p class="ph">(Deskripsi motto belum diisi.)</p></div>
+      <div class="panel"><h3>Valthera, Valterians</h3><p class="ph">(Deskripsi belum diisi.)</p></div>
+      <div class="panel"><h3>Adventure's Guild</h3><p class="ph">(Deskripsi belum diisi.)</p></div>
+    </div>
+  </section>
+
+  <!-- ===== CASTELLAN ===== -->
+  <section class="page stack" id="p-castellan" hidden>
+    <div>
+      <div class="eyebrow">Jajaran Legiun</div>
+      <h2 class="page-title">Castellan</h2>
+      <p class="ph">(Deskripsi Castellan belum diisi.)</p>
+    </div>
+    <!-- Isi halaman ini dibuat otomatis dari data STAFF di bagian script (blok "EDIT DI SINI") -->
+    <div class="stack" id="staff-root"></div>
+  </section>
+
+  <!-- ===== SYSTEM ===== -->
+  <section class="page stack" id="p-system" hidden>
+    <div>
+      <div class="eyebrow">Cara kerja Legiun</div>
+      <h2 class="page-title">System</h2>
+      <p class="lead">Aktivitas, poin, badge, dan rank.</p>
+    </div>
+
+    <h3 class="sec-title">Activity</h3>
+    <div class="grid">
+      <div class="panel"><h3>1. Training</h3><p class="ph">(Deskripsi belum diisi.)</p></div>
+      <div class="panel"><h3>2. Expedition</h3><p class="ph">(Deskripsi belum diisi.)</p></div>
+      <div class="panel"><h3>3. Weekly Quest</h3><p class="ph">(Deskripsi belum diisi.)</p></div>
+      <div class="panel"><h3>4. Event</h3><p class="ph">(Deskripsi belum diisi.)</p></div>
+    </div>
+
+    <h3 class="sec-title">Point &amp; Badge</h3>
+    <div class="grid">
+      <div class="panel">
+        <h3>Point</h3>
+        <p>Diperoleh dari keaktifan Legionnaire dalam regiment.</p>
+        <table class="pts">
+          <tr><td>Training</td><td>200 points</td></tr>
+          <tr><td>Expedition + Task</td><td>150 + 100 points</td></tr>
+          <tr><td>Weekly Quest</td><td>100 points / quest</td></tr>
+          <tr><td>Event</td><td>Depends</td></tr>
+        </table>
+      </div>
+      <div class="panel">
+        <h3>Badge</h3>
+        <p>Lencana yang diberikan sebagai penghargaan kepada Legionnaires yang telah meraih suatu pencapaian.</p>
+      </div>
+    </div>
+
+    <h3 class="sec-title">Rank</h3>
+    <p class="lead">Gelar yang diberikan setelah menyentuh kumulasi point tertentu.</p>
+    <div class="grid">
+      <div class="panel"><h3>Knight of Aldervane</h3><div class="rank-range">200 – 3.249 Points</div><p class="ph">(Deskripsi belum diisi.)</p></div>
+      <div class="panel"><h3>Sentinel of Aldervane</h3><div class="rank-range">3.250 – 7.499 Points</div><p class="ph">(Deskripsi belum diisi.)</p></div>
+      <div class="panel"><h3>Praefect of Aldervane</h3><div class="rank-range">7.500+ Points</div><p class="ph">(Deskripsi belum diisi.)</p></div>
+    </div>
+  </section>
+
+  <!-- ===== UNIFORM ===== -->
+  <section class="page stack" id="p-uniform" hidden>
+    <div>
+      <div class="eyebrow">Uniform Gallery</div>
+      <h2 class="page-title">Uniform</h2>
+      <p class="lead">Seragam tiap rank dan divisi.</p>
+    </div>
+    <!-- Cara pasang gambar: ganti tulisan "(Gambar uniform)" di dalam .img-box dengan  <img src="nama-file.png" alt="nama uniform"> -->
+
+    <h3 class="sec-title">Aspirant</h3>
+    <div class="grid">
+      <div class="panel uniform"><div class="img-box">(Gambar uniform)</div><h3>Aspirant Uniform</h3><p class="uname ph">(Nama uniform)</p></div>
+    </div>
+
+    <h3 class="sec-title">Rank Uniform</h3>
+    <div class="grid">
+      <div class="panel uniform"><div class="img-box">(Gambar uniform)</div><h3>I. Knight of Aldervane</h3><p class="uname">Valtherian's Aegis</p></div>
+      <div class="panel uniform"><div class="img-box">(Gambar uniform)</div><h3>II. Sentinel of Aldervane</h3><p class="uname ph">(Nama uniform)</p></div>
+      <div class="panel uniform"><div class="img-box">(Gambar uniform)</div><h3>III. Praefect of Aldervane</h3><p class="uname ph">(Nama uniform)</p></div>
+    </div>
+
+    <h3 class="sec-title">Vanguard &amp; Special</h3>
+    <div class="grid">
+      <div class="panel uniform"><div class="img-box">(Gambar uniform)</div><h3>Vanguard Uniform</h3><p class="uname ph">(Nama uniform)</p></div>
+      <div class="panel uniform"><div class="img-box">Coming soon</div><h3>Special Uniform</h3><p class="uname ph">Coming soon</p></div>
+    </div>
+  </section>
+
+  <!-- ===== CHRONICLES ===== -->
+  <section class="page stack" id="p-chronicles" hidden>
+    <div>
+      <div class="eyebrow">Sistem season</div>
+      <h2 class="page-title">Chronicles</h2>
+      <p class="lead">Seasonal sistem yang membawakan tema unik pada lore, desain uniform, badge, hingga kegiatan-kegiatan dalam Valthera Legion.</p>
+    </div>
+    <div class="panel">
+      <h3>Jadwal reset</h3>
+      <p>Chronicles direset pada tanggal 1 setiap tiga bulan, berlangsung selama 75 hari + 15 hari maintenance.</p>
+    </div>
+    <div class="season">
+      <span class="tag">Sedang berjalan</span>
+      <h3>Chronicles I: First Light</h3>
+      <p class="ph">(Deskripsi tema season belum diisi.)</p>
+      <ul class="checks">
+        <li>Kumpulkan point dari kegiatan regiment.</li>
+        <li>Dapatkan uniform eksklusif dengan mencapai rank Knight, Sentinel, dan Praefect.</li>
+        <li>Berpartisipasi di Chronicles I untuk mendapat Badge First Light.</li>
+      </ul>
+    </div>
+    <div class="panel locked">
+      <span class="soon">Coming soon</span>
+      <h3>Chronicle II</h3>
+      <p class="ph">(Deskripsi belum diisi.)</p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="motto">“Ad Gloria, Ad Aeterna”</div>
+    <small>Valthera Legion of Aldervane · Chronicles I: First Light</small>
+  </div>
+</footer>
+
+<script src="js/config.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
