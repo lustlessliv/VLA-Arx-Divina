@@ -54,7 +54,7 @@
   }).join("");
   
   /* Pindah halaman lewat #hash */
-  var names = ["entrance", "library", "legionary", "system", "uniform", "chronicles"];
+  var names = ["entrance", "library", "legionate", "system", "uniform", "chronicles"];
   function show(h) {
     if (names.indexOf(h) === -1) h = "entrance";
     names.forEach(function (n) {
