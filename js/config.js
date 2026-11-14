@@ -1,24 +1,14 @@
-/* =====================================================================
-   EDIT DI SINI
-   ===================================================================== */
-
-/* 1) LINK — isi dengan alamat WA / Discord. Kosong = tombol tampil redup. */
 var LINKS = {
-  wa: "",   // contoh: "https://chat.whatsapp.com/xxxx"
-  dc: ""    // contoh: "https://discord.gg/xxxx"
+  wa: "",
+  dc: ""
 };
 
-/* 2) LAMBANG & BANNER — kosongkan "" untuk pakai gambar bawaan.
-      Untuk ganti: isi dengan nama file atau URL gambar (png/jpg/svg/webp). */
 var ASSETS = {
-  crest:       "images/Logo_Seleksi_Nasional_Berdasarkan_Tes_(SNBT).svg.png",   // contoh: "lambang.png"
-  bannerLeft:  "",   // contoh: "banner-kiri.png"
-  bannerRight: ""    // contoh: "banner-kanan.png"
+  crest:       "images/Logo_Seleksi_Nasional_Berdasarkan_Tes_(SNBT).svg.png",
+  bannerLeft:  "",
+  bannerRight: ""
 };
 
-/* 4) JADWAL MINGGUAN (tampil di halaman Entrance)
-   Tiap minggu: ganti "week" dan isi "items". Satu baris { ... } = satu kegiatan.
-   Kosongkan items: [] kalau belum ada jadwal. */
 var SCHEDULE = {
   week: "(Periode)",
   items: [
@@ -28,12 +18,6 @@ var SCHEDULE = {
   ]
 };
 
-/* 3) JAJARAN CASTELLAN
-   - Tambah orang : salin satu baris { name: ... } di dalam members: [ ... ] jabatan tsb.
-   - Jabatan kosong: biarkan members: [] , otomatis muncul "Belum terisi · segera hadir".
-   - Tambah jabatan: salin satu blok { role: ... } di dalam positions: [ ... ].
-   - Field member : name, id, status ("Active" = hijau), sub (opsional, keterangan kecil),
-                    wa & dc (link, kosong = redup). */
 var STAFF = [
   {
     tier: "Triune",
@@ -42,7 +26,7 @@ var STAFF = [
       { role: "Marshal", tag: "Great General",
         desc: "Pemimpin tertinggi sekaligus pelopor dari Valthera Legion. Marshal memiliki kendali penuh atas operasi Legion.",
         members: [
-          { name: "Zero",   id: "1126000", status: "Active", wa: "", dc: "" },
+          { name: "Zero", id: "1126000", status: "Active", sub: "Leadership", wa: "", dc: "" },
           { name: "One", id: "1126001", status: "Active", sub: "Organizer", wa: "", dc: "" }
         ] },
       { role: "Legate", tag: "Legion Commander",
@@ -54,7 +38,7 @@ var STAFF = [
   },
   {
     tier: "Segate",
-    boxed: true,   // true = tier ini tampil di dalam satu kotak besar
+    boxed: true,
      tag: "Staff",
     desc: "Staff yang menjalankan tugas operasional berdasarkan bidang masing-masing. Segate memiliki wewenang untuk mengatur, mengawasi, dan memastikan seluruh kegiatan dalam divisinya berjalan dengan baik, serta wajib mempertanggungjawabkan pelaksanaan tugasnya kepada Marshal.",
     positions: [
