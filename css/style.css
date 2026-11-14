@@ -81,7 +81,6 @@ main{padding-block:40px 56px}
 /* Castellan / staff */
 .tier{display:flex;flex-direction:column;gap:14px}
 .tier-desc{color:var(--muted);font-size:.95rem;max-width:70ch}
-.tier-box .grid{align-items:start}
 .pos{display:flex;flex-direction:column;gap:12px}
 .pos-head h3{margin:0 0 4px}
 .pos-head p{margin:0}
