@@ -154,6 +154,9 @@ footer small{display:block;margin-top:6px;color:var(--muted);font-size:.8rem}
 p + p{margin-top:12px}
 .pos-head p,.tier-desc{white-space:pre-line}
 
+.img-box:has(img){background:var(--bg);border:0}
+.img-box:has(img){background:none;border:0}
+
 footer .credit{margin-top:14px;padding-top:14px;border-top:1px solid var(--line);font-size:.75rem;letter-spacing:.06em}
 footer .credit b{color:var(--accent);font-weight:600}
 footer .credit a{text-decoration:none}
