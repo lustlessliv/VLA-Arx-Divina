@@ -82,4 +82,19 @@
   });
   window.addEventListener("hashchange", function () { show(fromHash()); });
   show(fromHash());
+  /* Jadwal mingguan */
+  var schRoot = document.getElementById("schedule-root");
+  if (schRoot) {
+    var sch = typeof SCHEDULE !== "undefined" ? SCHEDULE : { week: "", items: [] };
+    var rangeEl = document.getElementById("schedule-range");
+    if (rangeEl) rangeEl.textContent = sch.week || "";
+    schRoot.innerHTML = sch.items && sch.items.length
+      ? sch.items.map(function (i) {
+          return '<div class="sch-item"><div class="sch-day">' + esc(i.day) +
+            "<small>" + esc(i.time || "") + "</small></div>" +
+            '<div><div class="sch-title">' + esc(i.title) + "</div>" +
+            (i.note ? '<div class="sch-note">' + esc(i.note) + "</div>" : "") + "</div></div>";
+        }).join("")
+      : '<div class="sch-empty">Belum ada jadwal minggu ini</div>';
+  }
 })();
