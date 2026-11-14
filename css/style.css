@@ -148,3 +148,5 @@ footer small{display:block;margin-top:6px;color:var(--muted);font-size:.8rem}
 @media(max-width:480px){.sch-item{grid-template-columns:1fr;gap:6px}}
 
 .sec-title{padding-bottom:8px;border-bottom:1px solid var(--line)}
+
+#staff-root .tier:last-child .empty{display:none}
