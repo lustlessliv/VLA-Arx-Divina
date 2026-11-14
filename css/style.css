@@ -147,3 +147,5 @@ footer small{display:block;margin-top:6px;color:var(--muted);font-size:.8rem}
 .sch-note{color:var(--muted);font-size:.9rem}
 .sch-empty{padding:16px;border:1px dashed var(--line);border-radius:8px;color:var(--muted);font-style:italic;text-align:center}
 @media(max-width:480px){.sch-item{grid-template-columns:1fr;gap:6px}}
+
+.sec-title{padding-bottom:8px;border-bottom:1px solid var(--line)}
