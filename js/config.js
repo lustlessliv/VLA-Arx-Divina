@@ -20,11 +20,11 @@ var ASSETS = {
    Tiap minggu: ganti "week" dan isi "items". Satu baris { ... } = satu kegiatan.
    Kosongkan items: [] kalau belum ada jadwal. */
 var SCHEDULE = {
-  week: "16 – 22 November 2026",
+  week: "(Periode)",
   items: [
-    { day: "Senin, 16 Nov",  time: "19.30 WIB", title: "Training",     note: "Pembekalan Aspirant" },
-    { day: "Rabu, 18 Nov",   time: "20.00 WIB", title: "Weekly Quest", note: "" },
-    { day: "Sabtu, 21 Nov",  time: "16.00 WIB", title: "Expedition",   note: "Kumpul di Arx Divina" }
+    { day: "Hari, Tanggal",  time: "Waktu", title: "Duty",     note: "Notes" },
+    { day: "Hari, Tanggal",   time: "Waktu", title: "Duty", note: "Notes" },
+    { day: "Hari, Tanggal",  time: "Waktu", title: "Duty",   note: "Notes" }
   ]
 };
 
@@ -73,7 +73,6 @@ var STAFF = [
       { role: "Herald", tag: "Public Relation",
         desc: "Bertanggung jawab atas seluruh alur pemerataan informasi dan komunikasi kekaisaran. Mengelola server, chat grup, menyampaikan pengumuman resmi, mempublikasikan kegiatan, serta menjadi penghubung antara jajaran staf dan Legionnaires.",
         members: [
-           { name: "Staff",   id: "-"},
            { name: "Staff",   id: "-"},
            { name: "Staff",   id: "-"}
         ] },
