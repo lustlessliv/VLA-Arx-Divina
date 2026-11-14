@@ -43,12 +43,16 @@
     return '<div class="panel pos"><div class="pos-head"><span class="tag">' + esc(p.tag) + "</span><h3>" +
       esc(p.role) + "</h3><p>" + esc(p.desc) + "</p></div>" + body + "</div>";
   }
-  document.getElementById("staff-root").innerHTML = STAFF.map(function (t) {
-    return '<div class="tier' + (t.boxed ? " tier-box panel" : "") + '"><h3 class="sec-title">' + esc(t.tier) + "</h3>" +
-      (t.desc ? '<p class="tier-desc">' + esc(t.desc) + "</p>" : "") +
+    document.getElementById("staff-root").innerHTML = STAFF.map(function (t) {
+    var head = t.boxed
+      ? '<div class="pos-head"><span class="tag">' + esc(t.tag || "") + "</span><h3>" + esc(t.tier) + "</h3>" +
+        (t.desc ? "<p>" + esc(t.desc) + "</p>" : "") + "</div>"
+      : '<h3 class="sec-title">' + esc(t.tier) + "</h3>" +
+        (t.desc ? '<p class="tier-desc">' + esc(t.desc) + "</p>" : "");
+    return '<div class="tier' + (t.boxed ? " tier-box panel" : "") + '">' + head +
       '<div class="grid">' + t.positions.map(position).join("") + "</div></div>";
   }).join("");
-
+  
   /* Pindah halaman lewat #hash */
   var names = ["beranda", "lore", "castellan", "system", "uniform", "chronicles"];
   function show(h) {
