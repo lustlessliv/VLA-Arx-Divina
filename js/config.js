@@ -16,6 +16,18 @@ var ASSETS = {
   bannerRight: ""    // contoh: "banner-kanan.png"
 };
 
+/* 4) JADWAL MINGGUAN (tampil di halaman Entrance)
+   Tiap minggu: ganti "week" dan isi "items". Satu baris { ... } = satu kegiatan.
+   Kosongkan items: [] kalau belum ada jadwal. */
+var SCHEDULE = {
+  week: "16 – 22 November 2026",
+  items: [
+    { day: "Senin, 16 Nov",  time: "19.30 WIB", title: "Training",     note: "Pembekalan Aspirant" },
+    { day: "Rabu, 18 Nov",   time: "20.00 WIB", title: "Weekly Quest", note: "" },
+    { day: "Sabtu, 21 Nov",  time: "16.00 WIB", title: "Expedition",   note: "Kumpul di Arx Divina" }
+  ]
+};
+
 /* 3) JAJARAN CASTELLAN
    - Tambah orang : salin satu baris { name: ... } di dalam members: [ ... ] jabatan tsb.
    - Jabatan kosong: biarkan members: [] , otomatis muncul "Belum terisi · segera hadir".
