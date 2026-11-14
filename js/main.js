@@ -5,7 +5,7 @@
     });
   }
 
-  /* Lambang & banner */
+  /* IDENTITIY */
   var tplFor = { crest: "tpl-crest", bannerLeft: "tpl-banner", bannerRight: "tpl-banner" };
   document.querySelectorAll("[data-slot]").forEach(function (el) {
     var key = el.getAttribute("data-slot");
@@ -15,14 +15,14 @@
       : document.getElementById(tplFor[key]).innerHTML;
   });
 
-  /* Tombol link beranda */
+  /* BUTTONS */
   document.querySelectorAll("[data-link]").forEach(function (a) {
     var url = LINKS[a.getAttribute("data-link")];
     if (url) { a.href = url; a.target = "_blank"; a.rel = "noopener"; }
     else { a.classList.add("off"); a.removeAttribute("href"); a.title = "Link belum diisi"; }
   });
 
-  /* Castellan */
+  /* LEGIONATE */
   function chip(label, url) {
     return url
       ? '<a class="chip" href="' + esc(url) + '" target="_blank" rel="noopener">' + label + "</a>"
@@ -53,7 +53,7 @@
       '<div class="grid">' + t.positions.map(position).join("") + "</div></div>";
   }).join("");
   
-  /* Pindah halaman lewat #hash */
+  /* INTERFACE (hash) */
   var names = ["entrance", "library", "legionate", "system", "uniform", "chronicles"];
   function show(h) {
     if (names.indexOf(h) === -1) h = "entrance";
@@ -69,8 +69,7 @@
   }
   function fromHash() { return (location.hash || "").replace("#", ""); }
 
-  /* Klik menu: ganti halaman langsung lewat JS (tidak bergantung pada #hash,
-     jadi tetap jalan di preview/iframe yang memblokir navigasi hash) */
+  /* INTERFACE (js) */
   document.addEventListener("click", function (e) {
     var a = e.target.closest ? e.target.closest('a[href^="#"]') : null;
     if (!a) return;
@@ -82,7 +81,8 @@
   });
   window.addEventListener("hashchange", function () { show(fromHash()); });
   show(fromHash());
-  /* Jadwal mingguan */
+  
+  /* SCHEDULE */
   var schRoot = document.getElementById("schedule-root");
   if (schRoot) {
     var sch = typeof SCHEDULE !== "undefined" ? SCHEDULE : { week: "", items: [] };
