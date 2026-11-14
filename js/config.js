@@ -79,7 +79,7 @@ var STAFF = [
            { name: "Staff",   id: "-"}
         ] },
       { role: "Artificer", tag: "Designer",
-        desc: "Menciptakan dan mengembangkan identitas visual Legion. Merancang uniform, insignia, serta berbagai perlengkapan visual yang menjadi identitas dan kebanggaan seluruh Legionnaires.",
+        desc: "Menciptakan dan mengembangkan identitas visual Legion. Merancang uniform, insignia, serta berbagai perlengkapan yang menjadi kebanggaan seluruh Legionnaires.",
         members: [
            { name: "Staff",   id: "-"}
         ] }
@@ -89,8 +89,8 @@ var STAFF = [
     tier: "Knighthood",
     desc: "",
     positions: [
-      { role: "Vanguard", tag: "Honorary Knight", desc: "Legionnaires yang berdiri di garis terdepan Valthera Legion. Vanguards adalah para pelopor dalam menghadapi tantangan, membuka jalan, dan membawa nama Legion ke luar Arx Divina.\n\nUntuk menjadi Vanguard, Legionnaires harus mengikuti seleksi bertahap dan uji kompetensi yang diadakan secara berkala. Vanguards direkrut, dilatih, dan dikomandoi langsung oleh Marshal.)"},
-      { role: "Legionnaire", tag: "Sworn Knight", desc: "Para pejuang yang telah menjadi bagian dari barisan Valthera Legion. Legionnaires adalah Knights yang berdiri di bawah satu panji, terikat oleh sumpah, kehormatan, dan persaudaraan.\n\nLegionnaires pada awalnya merupakan seorang Aspirant yang telah membuktikan kelayakannya menjadi Knight. Aspirant dibimbing oleh para Arbiter dari awal bergabung hingga penobatan. )"}
+      { role: "Vanguard", tag: "Honorary Knight", desc: "Legionnaires yang berdiri di garis terdepan Valthera Legion. Vanguards adalah para pelopor dalam menghadapi tantangan, membuka jalan, dan membawa nama Legion ke luar Arx Divina.\n\nUntuk menjadi Vanguard, Legionnaires harus mengikuti seleksi bertahap dan uji kompetensi yang diadakan secara berkala. Vanguards direkrut, dilatih, dan dikomandoi langsung oleh Marshal."},
+      { role: "Legionnaire", tag: "Sworn Knight", desc: "Para pejuang yang telah menjadi bagian dari barisan Valthera Legion. Legionnaires adalah Knights yang berdiri di bawah satu panji, terikat oleh sumpah, kehormatan, dan persaudaraan.\n\nLegionnaires pada awalnya merupakan seorang Aspirant yang telah membuktikan kelayakannya menjadi Knight. Aspirant dibimbing oleh para Arbiter dari awal bergabung hingga penobatan."}
     ]
   }
 ];
