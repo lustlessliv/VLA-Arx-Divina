@@ -22,7 +22,7 @@ var ASSETS = {
    - Tambah jabatan: salin satu blok { role: ... } di dalam positions: [ ... ].
    - Field member : name, id, status ("Active" = hijau), sub (opsional, keterangan kecil),
                     wa & dc (link, kosong = redup). */
-var LEGIONARY = [
+var STAFF = [
   {
     tier: "Triune",
     desc: "",
