@@ -54,9 +54,9 @@
   }).join("");
   
   /* Pindah halaman lewat #hash */
-  var names = ["beranda", "lore", "castellan", "system", "uniform", "chronicles"];
+  var names = ["entrance", "library", "legionary", "system", "uniform", "chronicles"];
   function show(h) {
-    if (names.indexOf(h) === -1) h = "beranda";
+    if (names.indexOf(h) === -1) h = "entrance";
     names.forEach(function (n) {
       var el = document.getElementById("p-" + n);
       if (el) el.hidden = n !== h;
