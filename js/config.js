@@ -11,7 +11,7 @@ var LINKS = {
 /* 2) LAMBANG & BANNER — kosongkan "" untuk pakai gambar bawaan.
       Untuk ganti: isi dengan nama file atau URL gambar (png/jpg/svg/webp). */
 var ASSETS = {
-  crest:       "",   // contoh: "lambang.png"
+  crest:       "images/Logo_Seleksi_Nasional_Berdasarkan_Tes_(SNBT).svg.png",   // contoh: "lambang.png"
   bannerLeft:  "",   // contoh: "banner-kiri.png"
   bannerRight: ""    // contoh: "banner-kanan.png"
 };
