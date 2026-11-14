@@ -150,3 +150,6 @@ footer small{display:block;margin-top:6px;color:var(--muted);font-size:.8rem}
 .sec-title{padding-bottom:8px;border-bottom:1px solid var(--line)}
 
 #staff-root .tier:last-child .empty{display:none}
+
+p + p{margin-top:12px}
+.pos-head p,.tier-desc{white-space:pre-line}
