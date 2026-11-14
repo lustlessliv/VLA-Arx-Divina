@@ -41,6 +41,7 @@ var STAFF = [
   {
     tier: "Segate",
     boxed: true,   // true = tier ini tampil di dalam satu kotak besar
+     tag: " Staff",
     desc: "Staff yang menjalankan tugas operasional berdasarkan bidang masing-masing. Segate memiliki wewenang untuk mengatur, mengawasi, dan memastikan seluruh kegiatan dalam divisinya berjalan dengan baik, serta wajib mempertanggungjawabkan pelaksanaan tugasnya kepada Marshal.",
     positions: [
       { role: "Arbiter", tag: "Trainer",
