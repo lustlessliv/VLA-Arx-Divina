@@ -22,20 +22,22 @@ var ASSETS = {
    - Tambah jabatan: salin satu blok { role: ... } di dalam positions: [ ... ].
    - Field member : name, id, status ("Active" = hijau), sub (opsional, keterangan kecil),
                     wa & dc (link, kosong = redup). */
-var STAFF = [
+var LEGIONARY = [
   {
-    tier: "Pimpinan",
+    tier: "Triune",
     desc: "",
     positions: [
       { role: "Marshal", tag: "Great General",
         desc: "Pemimpin tertinggi sekaligus pelopor dari Valthera Legion. Marshal memiliki kendali penuh atas operasi regiment.",
         members: [
           { name: "Zero",   id: "1126000", status: "Active", wa: "", dc: "" },
-          { name: "Olivia", id: "1126001", status: "Active", sub: "Organizer", wa: "", dc: "" }
+          { name: "One", id: "1126001", status: "Active", sub: "Organizer", wa: "", dc: "" }
         ] },
-      { role: "Legate", tag: "Main Commander",
+      { role: "Legate", tag: "Legion Commander",
         desc: "Leader untuk setiap dinamika aktivitas Valthera Legion, mulai dari expedition hingga event khusus. Legate menjadi wajah dari Legion itu sendiri.",
-        members: [] }
+        members: [
+           { name: "Leader",   id: "-"}
+        ] }
     ]
   },
   {
@@ -46,29 +48,42 @@ var STAFF = [
     positions: [
       { role: "Arbiter", tag: "Trainer",
         desc: "Melatih, mengarahkan, dan memastikan setiap Aspirant mendapat pembekalan terkait pengetahuan sistem, aturan baris-berbaris, sampai persiapan penobatannya menjadi Knight of Aldervane.",
-        members: [] },
+        members: [
+           { name: "Staff",   id: "-"},
+           { name: "Staff",   id: "-"}
+        ] },
       { role: "Provost", tag: "Field Enforcement",
         desc: "Bertanggung jawab menjaga kedisiplinan dan ketertiban kekaisaran. Mengawasi kegiatan lapangan, menjadi instruktur ekspedisi, mencatat waktu kegiatan, serta memastikan seluruh personel menjalankan tugas sesuai arahan.",
         members: [
-          { name: "Arion", id: "1126002", status: "Active", wa: "", dc: "" }
+          { name: "Arion", id: "1126002", status: "Active", wa: "", dc: "" },
+          { name: "Staff",   id: "-"}
         ] },
       { role: "Herald", tag: "Public Relation",
         desc: "Bertanggung jawab atas seluruh alur pemerataan informasi dan komunikasi kekaisaran. Mengelola server, chat grup, menyampaikan pengumuman resmi, mempublikasikan kegiatan, serta menjadi penghubung antara jajaran staf dan Legionnaires.",
-        members: [] },
+        members: [
+           { name: "Staff",   id: "-"},
+           { name: "Staff",   id: "-"},
+           { name: "Staff",   id: "-"}
+        ] },
       { role: "Scrivener", tag: "Archiver",
         desc: "Bertanggung jawab mengelola seluruh arsip dokumen dan administrasi kekaisaran. Mencatat kegiatan, mengelola formulir, mengatur database, serta memastikan arsip dan catatan resmi tersusun dengan rapi.",
-        members: [] },
+        members: [
+           { name: "Staff",   id: "-"},
+           { name: "Staff",   id: "-"}
+        ] },
       { role: "Artificer", tag: "Designer",
         desc: "Bertanggung jawab menciptakan dan mengembangkan identitas visual kekaisaran. Merancang uniform, badge, serta berbagai perlengkapan visual yang menjadi identitas dan kebanggaan seluruh anggota.",
-        members: [] }
+        members: [
+           { name: "Staff",   id: "-"}
+        ] }
     ]
   },
   {
-    tier: "Anggota",
+    tier: "Knighthood",
     desc: "",
     positions: [
-      { role: "Vanguards", tag: "Elite Knights", desc: "(Deskripsi belum diisi.)", members: [] },
-      { role: "Legionnaires", tag: "Debuted Knight", desc: "(Deskripsi belum diisi.)", members: [] }
+      { role: "Vanguards", tag: "Elite Knights", desc: "(Deskripsi)"},
+      { role: "Legionnaires", tag: "Debuted Knight", desc: "(Deskripsi)"}
     ]
   }
 ];
