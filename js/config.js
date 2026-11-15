@@ -45,12 +45,12 @@ var STAFF = [
       { role: "Arbiter", tag: "Trainer",
         desc: "Melatih, mengarahkan, dan memastikan setiap Aspirant memiliki kesiapan, serta mendapat pembekalan terkait pengetahuan sistem, aturan baris-berbaris, sampai persiapan penobatannya menjadi Knight of Aldervane.",
         members: [
-           { name: "Staff",   id: "-"}
+           { name: "Arion", id: "1126002", status: "Active", wa: "", dc: "" }
         ] },
       { role: "Provost", tag: "Field Enforcement",
         desc: "Bertanggung jawab menjaga kedisiplinan dan ketertiban Legion. Mengawasi kegiatan lapangan, menjadi instruktur ekspedisi, mencatat waktu kegiatan, serta memastikan seluruh personel menjalankan tugas sesuai arahan.",
         members: [
-          { name: "Arion", id: "1126002", status: "Active", wa: "", dc: "" }
+          { name: "Staff", id: "-" }
         ] },
       { role: "Herald", tag: "Public Relation",
         desc: "Mengendalikan seluruh alur pemerataan informasi dan komunikasi Legion. Mengelola server, chat grup, menyampaikan pengumuman resmi, mempublikasikan kegiatan, serta menjadi penghubung antara Triune dan Legionnaires.",
