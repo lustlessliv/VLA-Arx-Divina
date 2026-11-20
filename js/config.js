@@ -4,7 +4,7 @@ var LINKS = {
 };
 
 var ASSETS = {
-  crest:       "images/Logo_Seleksi_Nasional_Berdasarkan_Tes_(SNBT).svg.png",
+  crest:       "Valthera.png",
   bannerLeft:  "",
   bannerRight: ""
 };
