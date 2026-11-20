@@ -4,7 +4,7 @@ var LINKS = {
 };
 
 var ASSETS = {
-  crest:       "Valthera.png",
+  crest:       "images/Valthera.png",
   bannerLeft:  "",
   bannerRight: ""
 };
