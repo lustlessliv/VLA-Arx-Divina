@@ -12,10 +12,10 @@ var ASSETS = {
 var SCHEDULE = {
   week: "30 November 2026 – 6 Desember 2026",
   items: [
-    { day: "Selasa, 1 Des 2026",  time: "18:30 WIB", title: "Grand Opening", note: "Pembukaan Chronicles I: First Light." },
-    { day: "Kamis, 3 Des 2026",  time: "18:30 WIB", title: "Expedition", note: "Ekspedisi pertama Valthera Legion" },
-    { day: "Jumat, 4 Des 2026",  time: "18:30 WIB", title: "Expedition", note: "" },
-    { day: "Sabtu, 5 Des 2026", time: " 18:30 WIB", title: "Expedition", note: "" }
+    { day: "Selasa, 1 Des",  time: "18:30 WIB", title: "Grand Opening", note: "Pembukaan Chronicles I: First Light." },
+    { day: "Kamis, 3 Des",  time: "18:30 WIB", title: "Expedition", note: "Ekspedisi pertama Valthera Legion" },
+    { day: "Jumat, 4 Des",  time: "18:30 WIB", title: "Expedition", note: "" },
+    { day: "Sabtu, 5 Des", time: " 18:30 WIB", title: "Expedition", note: "" }
   ]
 };
 
