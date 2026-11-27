@@ -158,3 +158,14 @@ footer .credit{margin-top:14px;padding-top:14px;border-top:1px solid var(--line)
 footer .credit b{color:var(--accent);font-weight:600}
 footer .credit a{text-decoration:none}
 footer .credit a:hover b{color:var(--accent-light)}
+
+.more{margin-top:12px}
+.more summary{cursor:pointer;list-style:none;display:inline-block;color:var(--accent);font-weight:600;font-size:.9rem}
+.more summary::-webkit-details-marker{display:none}
+.more summary:hover{color:var(--accent-light)}
+.more summary::after{content:" ▾"}
+.more[open] summary::after{content:" ▴"}
+.more[open] .more-open,.more:not([open]) .more-close{display:none}
+.more p{margin-top:12px}
+
+.season .checks{margin-top:4px;padding-top:16px;border-top:1px solid var(--line)}
